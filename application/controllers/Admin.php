@@ -60,7 +60,6 @@ class Admin extends CI_Controller
                         $this->session->set_flashdata('warna', 'success');
                         redirect('admin/pengaturan');
                     }
-
                 }
             } else {
                 $this->load->view('pages/profile', $data);
@@ -123,5 +122,4 @@ class Admin extends CI_Controller
         $this->session->sess_destroy();
         redirect('admin/login', 'refresh');
     }
-
 }
